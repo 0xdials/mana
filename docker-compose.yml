@@ -3,7 +3,7 @@ version: "3.9"
 services:
   postgres:
     image: pgvector/pgvector:pg16
-    container_name: ai-pipeworks-postgres
+    container_name: mana-postgres
     environment:
       POSTGRES_USER: app
       POSTGRES_PASSWORD: app
@@ -21,7 +21,7 @@ services:
 
   redis:
     image: redis:7.2-alpine
-    container_name: ai-pipeworks-redis
+    container_name: mana-redis
     ports:
       - "6379:6379"
     healthcheck:
@@ -34,7 +34,7 @@ services:
   api:
     build:
       context: ./api
-    container_name: ai-pipeworks-api
+    container_name: mana-api
     environment:
       PG_DSN: ${PG_DSN}
       REDIS_URL: ${REDIS_URL}

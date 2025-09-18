@@ -10,5 +10,5 @@ logs:
 	docker compose logs -f api
 
 psql:
-	docker exec -it ai-pipeworks-postgres psql -U app -d app
+	docker exec -it mana-postgres psql -U app -d app
 

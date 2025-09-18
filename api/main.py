@@ -7,7 +7,7 @@ from psycopg2 import sql
 import redis
 from fastapi import FastAPI
 
-SERVICE_NAME = "ai-pipeworks"
+SERVICE_NAME = "mana"
 
 PG_DSN = os.getenv("PG_DSN", "postgresql://app:app@postgres:5432/app")
 REDIS_URL = os.getenv("REDIS_URL", "redis://redis:6379/0")

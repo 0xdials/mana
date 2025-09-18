@@ -4,16 +4,16 @@ minimal AI/ML infra skeleton — postgres, redis, fastapi
 
 ## layout
 ```
-ai-pipeworks/
+mana/
 ├── .env
 ├── .gitignore
 ├── docker-compose.yml
 ├── Makefile
 ├── pgdata/ # postgres data (gitignored)
 └── api/
-├── Dockerfile
-├── main.py
-└── requirements.txt
+    ├── Dockerfile
+    ├── main.py
+    └── requirements.txt
 ```
 
 ## usage
