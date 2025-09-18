@@ -3,7 +3,7 @@
 minimal AI/ML infra skeleton — postgres, redis, fastapi
 
 ## layout
-
+```
 ai-pipeworks/
 ├── .env
 ├── .gitignore
@@ -14,7 +14,7 @@ ai-pipeworks/
 ├── Dockerfile
 ├── main.py
 └── requirements.txt
-
+```
 
 ## usage
 ```sh
