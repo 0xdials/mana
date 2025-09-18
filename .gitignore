@@ -1,0 +1,14 @@
+# dependencies & env
+.env
+__pycache__/
+*.pyc
+
+# editor/OS
+.DS_Store
+.vscode/
+.idea/
+
+# docker
+pgdata/
+*.log
+
