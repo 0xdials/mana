@@ -26,9 +26,10 @@ docker-compose logs -f api
 
 # check health
 curl -s localhost:8080/healthz
+```
 
 example response:
-
+```json
 {
   "ok": true,
   "postgres": true,
@@ -36,20 +37,22 @@ example response:
   "service": "mana",
   "ts": 1699999999
 }
+```
 
-env vars
+## env vars
 
 Set in .env at repo root:
 
-    PG_DSN → Postgres connection string (default: postgresql://app:app@postgres:5432/app)
+`PG_DSN` → Postgres connection string (default: `postgresql://app:app@postgres:5432/app`)
 
-    REDIS_URL → Redis connection string (default: redis://redis:6379/0)
+`REDIS_URL` → Redis connection string (default: `redis://redis:6379/0`)
 
 These values are injected into the API container at runtime.
-notes
 
-    data lives in ./pgdata (gitignored)
+## notes
 
-    make up / make down for quick start/stop
+data lives in ./pgdata (gitignored)
 
-    api listens on :8080, postgres on :5432, redis on :6379
+make up / make down for quick start/stop
+
+api listens on :8080, postgres on :5432, redis on :6379
