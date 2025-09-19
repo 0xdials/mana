@@ -53,6 +53,6 @@ These values are injected into the API container at runtime.
 
 data lives in ./pgdata (gitignored)
 
-make up / make down for quick start/stop
+`make up` `make down` for quick start/stop
 
 api listens on :8080, postgres on :5432, redis on :6379
